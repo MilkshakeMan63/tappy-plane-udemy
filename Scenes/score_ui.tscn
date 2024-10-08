@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://c0lj3lsolwp2u"]
+
+[ext_resource type="LabelSettings" uid="uid://26ndja0h8cff" path="res://assets/LG_red_64.tres" id="1_02dmk"]
+[ext_resource type="Script" path="res://Scenes/score_ui.gd" id="1_7lcs5"]
+
+[node name="ScoreUI" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_7lcs5")
+
+[node name="ScoreLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 24.0
+offset_right = 65.0
+offset_bottom = 88.0
+text = "0
+"
+label_settings = ExtResource("1_02dmk")
