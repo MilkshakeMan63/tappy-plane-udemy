@@ -1,7 +1,7 @@
 extends Node
 
 const GAME: PackedScene = preload("res://Scenes/Game/game.tscn")
-const MAIN: PackedScene = preload("res://Scenes/main.tscn")
+const MAIN: PackedScene = preload("res://Scenes/UI & Other/main.tscn")
 
 const SCROLL_SPEED = 120
 const GROUP_PLANE = "Plane"

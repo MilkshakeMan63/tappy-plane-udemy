@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://dqsmkla6xvop7"]
 
 [ext_resource type="LabelSettings" uid="uid://df10a4j8s4yy8" path="res://assets/LG_red_72.tres" id="1_1nq63"]
-[ext_resource type="Script" path="res://Scenes/game_over_ui.gd" id="1_r21tv"]
+[ext_resource type="Script" path="res://Scripts/UI & Other/game_over_ui.gd" id="1_r21tv"]
 [ext_resource type="LabelSettings" uid="uid://p7hp8ll3u5d0" path="res://assets/LG_white_42.tres" id="2_h1apy"]
 [ext_resource type="AudioStream" uid="uid://dmifg600x7xgu" path="res://assets/audio/game_over.wav" id="3_xx60r"]
 

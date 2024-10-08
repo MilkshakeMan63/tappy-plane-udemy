@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://c0lj3lsolwp2u"]
 
 [ext_resource type="LabelSettings" uid="uid://26ndja0h8cff" path="res://assets/LG_red_64.tres" id="1_02dmk"]
-[ext_resource type="Script" path="res://Scenes/score_ui.gd" id="1_7lcs5"]
+[ext_resource type="Script" path="res://Scripts/UI & Other/score_ui.gd" id="1_7lcs5"]
 
 [node name="ScoreUI" type="Control"]
 layout_mode = 3

@@ -1,7 +1,7 @@
 [gd_scene load_steps=12 format=3 uid="uid://dt5de4di0pdvg"]
 
 [ext_resource type="Texture2D" uid="uid://c01443qbsytcv" path="res://assets/planes_sheet.png" id="1_pyqr2"]
-[ext_resource type="Script" path="res://Scenes/Game/plane.gd" id="1_y4lpd"]
+[ext_resource type="Script" path="res://Scripts/Game/plane.gd" id="1_y4lpd"]
 [ext_resource type="AudioStream" uid="uid://bm0eswpnkdbso" path="res://assets/audio/engine.mp3" id="3_hlv7a"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_rx0ie"]
@@ -76,6 +76,7 @@ _data = {
 
 [node name="Plane" type="CharacterBody2D" groups=["Plane"]]
 scale = Vector2(0.75, 0.75)
+collision_layer = 8
 script = ExtResource("1_y4lpd")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]

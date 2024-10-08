@@ -4,9 +4,8 @@ class_name Pipes
 
 var speed = GameManager.SCROLL_SPEED # comes from autoload script. Type is GameManager and the constant in that script it SCROLL_SPEED. I am setting this var to that constant.
 
-const OFF_SCREEN =-500
-
 @onready var score_sound: AudioStreamPlayer = $ScoreSound
+@onready var visible_on_screen_notifier_2d: VisibleOnScreenNotifier2D = $VisibleOnScreenNotifier2D
 
 
 func _ready() -> void:
@@ -18,9 +17,6 @@ func _process(delta: float) -> void:
 	check_off_screen()
 
 
-func check_off_screen(): # fail safe to delete pipe if it goes off screen. The function above does work but may not if the window is minimized.
-	if position.x < OFF_SCREEN:
-		queue_free()
 
 
 func on_plane_died():
@@ -32,9 +28,15 @@ func _on_laser_body_entered(body: Node2D) -> void: # plays scored sound when a b
 		score_sound.play()
 		ScoreManager.increment_score() # adds 1 to the score everytime we pass a laser
 
+
 func _on_visible_on_screen_notifier_2d_screen_exited() -> void:
 	queue_free()
 	print("Pipes Deleted")
+
+
+func check_off_screen(): # fail safe to delete pipe if it goes off screen. The function above does work but may not if the window is minimized.
+	if visible_on_screen_notifier_2d.position.x < get_viewport_rect().position.x: # checks if the pipe position is out of the viewport and deletes the scene if so.
+		queue_free()
 
 
 func _on_pipe_body_entered(body: Node2D) -> void: 

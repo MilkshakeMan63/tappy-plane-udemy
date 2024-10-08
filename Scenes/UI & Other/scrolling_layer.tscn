@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://cklmdwfxjgh5d"]
 
-[ext_resource type="Script" path="res://Scenes/scrolling_layer.gd" id="1_cjvv1"]
+[ext_resource type="Script" path="res://Scripts/UI & Other/scrolling_layer.gd" id="1_cjvv1"]
 
 [node name="ScrollingLayer" type="ParallaxLayer"]
 script = ExtResource("1_cjvv1")

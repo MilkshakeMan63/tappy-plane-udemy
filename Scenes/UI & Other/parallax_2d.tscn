@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://d07lnbv8xtctk"]
 
-[ext_resource type="Script" path="res://Scenes/parallax_2d.gd" id="1_ou456"]
+[ext_resource type="Script" path="res://Scripts/UI & Other/parallax_2d.gd" id="1_ou456"]
 
 [node name="Parallax2D" type="Parallax2D"]
 z_index = -2
