@@ -17,6 +17,7 @@
 script = ExtResource("1_nj2ei")
 
 [node name="ParallaxBg" type="Node2D" parent="."]
+visible = false
 position = Vector2(0, 427)
 
 [node name="Parallax2D" parent="ParallaxBg" instance=ExtResource("2_mmsk5")]
@@ -75,6 +76,5 @@ position = Vector2(405, 444)
 [node name="ScoreUI" parent="CanvasLayer" instance=ExtResource("7_t7ccc")]
 
 [node name="ParallaxBackground" parent="." instance=ExtResource("8_g4e1w")]
-visible = false
 
 [connection signal="timeout" from="SpawnTimer" to="." method="_on_spawn_timer_timeout"]
